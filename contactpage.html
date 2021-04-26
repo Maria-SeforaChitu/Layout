@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/contactpage.css" />
+    <script
+      src="https://kit.fontawesome.com/de8a137d63.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pagina de contact</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <section class="title">
+          <div class="subtitle">
+            <i class="fas fa-camera fa-sm"></i>
+            <h3>Album</h3>
+          </div>
+          <button type="button" class="btn btn-hamburger-menu">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </section>
+      </header>
+
+      <form action="" method="GET">
+          <div class="half left">
+              <label for="input-name"><b>Name</b></label>
+              <input type="text" name="input-name" id="input-name" placeholder="Enter name">
+              <label for="input-email"><b>Email</b></label>
+              <input type="text" name="input-email" id="input-email" placeholder="Enter email">
+              <label for="input-subject"><b>Subject</b></label>
+              <input type="text" name="input-subject" id="input-subject" placeholder="Enter subject">
+          </div>
+          <div class="half right">
+              <label for="input-message"><b>Message</b></label>
+              <textarea name="input-message" type="text" id="input-message" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+      </form>
+
+      <section class="social-media">
+        <table>
+          <tr class="tr-header">
+            <td colspan="3" class="td-header">Or find us in social media</td>
+          </tr>
+          <tr>
+            <td class="td-contact td-facebook">
+              <a href="https://www.facebook.com/">Facebook
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </td>
+            <td class="td-contact td-twitter">
+              <a href="https://twitter.com/?lang=en">Twitter
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </td>
+            <td class="td-contact td-instagram">
+              <a href="https://www.instagram.com/">Instagram
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </section>
+    
+      <footer>
+        <p class="footer-left">
+          Album example is &#169 Bootstrap, but please dowland and customize it yourself!
+          <br>
+          New  Bootstrap?
+          <a href="homepage.html">Visit the homepage</a> or read our
+          <a href="starterguide.html">getting started guide</a>.
+        </p>
+        <p class="footer-right">
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+   </div>
+  </body>
+</html>

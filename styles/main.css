@@ -1,0 +1,334 @@
+html {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+}
+
+.title {
+  background-color: black;
+  padding: 0.5px 10px;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flow-root;
+}
+
+.subtitle {
+  display: flex;
+  position: relative;
+  float: left;
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.fa-camera {
+  float: left;
+  margin: auto;
+  padding-right: 8px;
+}
+
+.btn {
+  padding: 2px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: none;
+  color: wheat;
+  outline: none;
+  margin-top: 2px;
+}
+
+.btn-hamburger-menu {
+  padding: 6px 14px;
+  border-radius: 8%;
+  border-style: solid grey;
+  border-width: thin;
+  background-color: black;
+  color: grey;
+  box-shadow: none;
+  position: relative;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+article {
+  width: 50%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.article-title {
+  font-family: Verdana, sans-serif;
+  font-size: 200%;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+.article-body {
+  text-align: center;
+  color: rgb(185, 185, 185);
+}
+
+.article-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: rgb(66, 66, 231);
+  color: white;
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn:disabled {
+  box-shadow: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.special {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  width: 60%;
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+}
+
+.option {
+  display: flex;
+  border-color: gray;
+  border-radius: 1%;
+  color: black;
+}
+
+.image-galery {
+  background-color: rgb(211, 211, 211);
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  gap: 15px 5%;
+  grid-template-areas:
+    "fig-1 fig-2 fig-3"
+    "fig-4 fig-5 fig-6"
+    "fig-7 fig-8 fig-9";
+  justify-content: space-around;
+}
+
+.image-galery a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-galery a i {
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  opacity: 0;
+  width: 200px;
+  height: 300px;
+}
+
+.image-galery a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.image-galery a:hover i,
+.image-galery a:hover::before {
+  opacity: 1;
+}
+
+figure {
+  background-color: white;
+  box-shadow: 0px 0px 3px 3px rgb(197, 197, 197);
+  margin: 0;
+}
+
+figure div {
+  padding: 5px;
+}
+
+.fig-1 {
+  grid-area: fig-1;
+}
+
+.img-1 {
+  background-image: url("https://picsum.photos/id/237/200/300");
+}
+
+.fig-2 {
+  grid-area: fig-2;
+}
+
+.img-2 {
+  background-image: url("https://picsum.photos/id/900/200/300");
+}
+
+.fig-3 {
+  grid-area: fig-3;
+}
+
+.img-3 {
+  background-image: url("https://picsum.photos/id/896/200/300");
+}
+
+.fig-4 {
+  grid-area: fig-4;
+}
+
+.img-4 {
+  background-image: url("https://picsum.photos/id/600/200/300");
+}
+
+.fig-5 {
+  grid-area: fig-5;
+}
+
+.img-5 {
+  background-image: url("https://picsum.photos/id/350/200/300");
+}
+
+.fig-6 {
+  grid-area: fig-6;
+}
+
+.img-6 {
+  background-image: url("https://picsum.photos/id/55/200/300");
+}
+
+.fig-7 {
+  grid-area: fig-7;
+}
+
+.img-7 {
+  background-image: url("https://picsum.photos/id/233/200/300");
+}
+
+.fig-8 {
+  grid-area: fig-8;
+}
+
+.img-8 {
+  background-image: url("https://picsum.photos/id/260/200/300");
+}
+
+.fig-9 {
+  grid-area: fig-9;
+}
+
+.img-9 {
+  background-image: url("https://picsum.photos/id/23/200/300");
+}
+
+.fig-description {
+  font-size: x-small;
+  text-align: left;
+  color: grey;
+  margin: 0;
+}
+
+.fig-description-time {
+  text-align: right;
+  padding-top: 5px;
+  float: right;
+}
+
+.btn-figure {
+  font-size: x-small;
+  background-color: whitesmoke;
+  color: grey;
+  padding: 1px 5px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-left {
+  float: left;
+  height: 100%;
+  margin: 0;
+}
+
+.footer-right {
+  float: right;
+  height: 100%;
+  margin: 0;
+}
